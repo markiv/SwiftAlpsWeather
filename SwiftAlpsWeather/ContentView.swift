@@ -27,7 +27,21 @@ extension ContentView {
         var cancellable: AnyCancellable?
 
         func fetch() {
-            let url = URL(string: "https://api.openweathermap.org/data/2.5/group?units=metric&id=6295494,785842,2950158,2761369,292223,1880252,292968,792578,863883,3042030,2772400,2867714&appid=d37a967cdb5e2524a297ea5a2339efd0")!
+            let ids = [
+                "6295494",
+                "785842",
+                "2950158",
+                "2761369",
+                "292223",
+                "1880252",
+                "292968",
+                "792578",
+                "863883",
+                "3042030",
+                "2772400",
+                "2867714"
+            ]
+            let url = WeatherApi.group(ids: ids)
 
             cancellable = URLSession.shared
                 .dataTaskPublisher(for: url)
@@ -35,8 +49,13 @@ extension ContentView {
                 .decode(type: CitiesResponse.self, decoder: JSONDecoder())
                 .map(\.list)
                 .receive(on: DispatchQueue.main)
-                .replaceError(with: [])
-                .assign(to: \.cities, on: self)
+                .sink(receiveCompletion: { completion in
+                    if case let .failure(error) = completion {
+                        debugPrint(error)
+                    }
+                }, receiveValue: { cities in
+                    self.cities = cities
+                })
         }
     }
 }
