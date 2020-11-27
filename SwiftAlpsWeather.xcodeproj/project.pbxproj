@@ -15,6 +15,7 @@
 		9A66A9002570F987007394D9 /* SwiftAlpsWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A8FF2570F987007394D9 /* SwiftAlpsWeatherUITests.swift */; };
 		9A66A9142570FE52007394D9 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A9132570FE52007394D9 /* WeatherApi.swift */; };
 		9A66A91925710740007394D9 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A91825710740007394D9 /* DataModels.swift */; };
+		9ADAE86025713FAC00CD4966 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADAE85F25713FAC00CD4966 /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9A66A9012570F987007394D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A66A9132570FE52007394D9 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 		9A66A91825710740007394D9 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		9ADAE85F25713FAC00CD4966 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				9A66A8E22570F985007394D9 /* SwiftAlpsWeatherApp.swift */,
 				9A66A8E42570F985007394D9 /* ContentView.swift */,
+				9ADAE85F25713FAC00CD4966 /* LocationModel.swift */,
 				9A66A91825710740007394D9 /* DataModels.swift */,
 				9A66A9132570FE52007394D9 /* WeatherApi.swift */,
 				9A66A8E62570F987007394D9 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				9A66A91925710740007394D9 /* DataModels.swift in Sources */,
 				9A66A8E32570F985007394D9 /* SwiftAlpsWeatherApp.swift in Sources */,
 				9A66A9142570FE52007394D9 /* WeatherApi.swift in Sources */,
+				9ADAE86025713FAC00CD4966 /* LocationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
