@@ -12,10 +12,16 @@ struct ContentView: View {
     @StateObject var viewModel = ViewModel()
 
     var body: some View {
-        List(viewModel.cities) { city in
-            Text(city.name)
-        }.onAppear {
-            viewModel.fetch()
+        NavigationView {
+            List(viewModel.cities) { city in
+                Text(city.name).bold()
+                Spacer()
+                Text("\(city.main.temp, specifier: "%.1f")°C")
+            }
+            .onAppear {
+                viewModel.fetch()
+            }
+            .navigationTitle("Swift Alps Weather")
         }
     }
 }
@@ -28,18 +34,13 @@ extension ContentView {
 
         func fetch() {
             let ids = [
-                "6295494",
-                "785842",
-                "2950158",
-                "2761369",
-                "292223",
-                "1880252",
-                "292968",
-                "792578",
-                "863883",
-                "3042030",
-                "2772400",
-                "2867714"
+                "6295494", // Zürich
+                "756135", // Warsaw
+                "2950158", // Berlin
+                "292223", // Dubai
+                "683506", // Bucharest
+                "232422", // Kampala"
+                "2643743" // London
             ]
             let url = WeatherApi.group(ids: ids)
 
