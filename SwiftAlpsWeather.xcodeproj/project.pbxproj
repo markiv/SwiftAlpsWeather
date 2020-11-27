@@ -13,6 +13,7 @@
 		9A66A8EA2570F987007394D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A66A8E92570F987007394D9 /* Preview Assets.xcassets */; };
 		9A66A8F52570F987007394D9 /* SwiftAlpsWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A8F42570F987007394D9 /* SwiftAlpsWeatherTests.swift */; };
 		9A66A9002570F987007394D9 /* SwiftAlpsWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A8FF2570F987007394D9 /* SwiftAlpsWeatherUITests.swift */; };
+		9A66A9142570FE52007394D9 /* WeatherApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A66A9132570FE52007394D9 /* WeatherApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		9A66A8FB2570F987007394D9 /* SwiftAlpsWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAlpsWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A66A8FF2570F987007394D9 /* SwiftAlpsWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAlpsWeatherUITests.swift; sourceTree = "<group>"; };
 		9A66A9012570F987007394D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A66A9132570FE52007394D9 /* WeatherApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				9A66A8E62570F987007394D9 /* Assets.xcassets */,
 				9A66A8EB2570F987007394D9 /* Info.plist */,
 				9A66A8E82570F987007394D9 /* Preview Content */,
+				9A66A9132570FE52007394D9 /* WeatherApi.swift */,
 			);
 			path = SwiftAlpsWeather;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9A66A8E52570F985007394D9 /* ContentView.swift in Sources */,
 				9A66A8E32570F985007394D9 /* SwiftAlpsWeatherApp.swift in Sources */,
+				9A66A9142570FE52007394D9 /* WeatherApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
